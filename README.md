@@ -7,7 +7,7 @@ This project models implied volatility and prices options for Apple Inc. (AAPL) 
 
 ## 📊 Dataset
 
-- **Source**: [Kaggle: Apple Options Data (2016–2023)](https://www.kaggle.com/)
+- **Source**: [Kaggle: Apple Options Data (2016–2023)]([https://www.kaggle.com/](https://www.kaggle.com/datasets/kylegraupe/aapl-options-data-2016-2020))
 - **Content**: Options chains for AAPL, including:
   - Call/Put bid-ask, last prices
   - Strike prices, expiration dates
