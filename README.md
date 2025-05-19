@@ -8,10 +8,6 @@ This project models implied volatility and prices options for Apple Inc. (AAPL) 
 ## 📊 Dataset
 
 - **Source**: [Kaggle: Apple Options Data (2016–2023)](https://www.kaggle.com/datasets/kylegraupe/aapl-options-data-2016-2020)
-- **Content**: Options chains for AAPL, including:
-  - Call/Put bid-ask, last prices
-  - Strike prices, expiration dates
-  - Implied volatilities (IV)
 - **Additional**: Risk-free rate from `^FVX` via `yfinance`
 
 ---
@@ -31,22 +27,18 @@ This project models implied volatility and prices options for Apple Inc. (AAPL) 
 
 Trained **Random Forest Regressors** separately for call and put implied volatility (`call_iv`, `put_iv`).
 
-### 🔹 Model 1 (Earlier Run)
+### 🔹 Model 1 (Use ML to predict Volatility and MCS to calculate prices)
 **Call IV**
-- **MSE**: 0.0651  
 - **R²**: 0.9109
 
-**Put IV**
-- **MSE**: 0.0066  
+**Put IV** 
 - **R²**: 0.9738
 
-### 🔹 Model 2 (Final Run with Cleaned Features)
+### 🔹 Model 2 (Use ML to predict Prices)
 **Call IV**
-- **MSE**: 0.2808  
 - **R²**: 0.9999
 
 **Put IV**
-- **MSE**: 0.2934  
 - **R²**: 0.9998
 
 ---
@@ -84,31 +76,8 @@ Below are the most influential features used to predict implied volatility:
 
 ---
 
-## 🧰 Tech Stack
-
-- Python, Jupyter Notebook  
-- `pandas`, `numpy`, `matplotlib`, `seaborn`  
-- `yfinance`, `scikit-learn`, `tqdm`, `scipy`
-
----
-
-## 🚀 How to Run
-
-1. Clone the repo  
-2. Add the CSV file (`aapl_2016_2020.csv`) in the same directory  
-3. Launch `project.ipynb` in Jupyter  
-4. Run all cells sequentially
-
----
-
 ## 📈 Future Work
 
-- Add GARCH models for volatility
 - Use LSTM models for time-dependent volatility prediction
-- Extend pricing to American options
 
 ---
-
-## 📬 Contact
-
-If you'd like to collaborate or have questions, feel free to reach out via issues or pull requests!
